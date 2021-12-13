@@ -29,7 +29,7 @@ const Contact = () => {
         e.target.reset()
     };
 
-    {/* --- handleOnSubmit method --- */ }
+    //{/* --- handleOnSubmit method --- */ }
     return (
         <section className='section-c' style={{ height: 'calc(100vh - 70px)' }}>
             <h1>contact us</h1>
