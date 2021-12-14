@@ -9,7 +9,7 @@ import {
 export const links = [
     {
         id: 1,
-        url: '/home',
+        url: '/',
         text: 'home',
         icon: <FaHome />,
     },

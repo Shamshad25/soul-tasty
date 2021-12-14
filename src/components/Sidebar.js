@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useGlobalContext } from '../context';
 import { FaTimes } from 'react-icons/fa';
 import { links } from './dataLinks';
-import { Link, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
+    const history = useNavigate();
     const { isSidebarOpen, closeSidebar } = useGlobalContext();
-
-    const location = useLocation();
-    useEffect(() => {
-
+    const onLinkClick = (url) => {
         closeSidebar();
-    }, [location])
+        history(url);
+    }
+
 
     return (
         <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
@@ -25,10 +25,15 @@ const Sidebar = () => {
                     const { id, url, text, icon } = link;
                     return (
                         <li key={id}>
-                            <Link to={url}>
+                            <button
+                                //  to={url}
+
+                                onClick={() => onLinkClick(url)}
+                            >
+
                                 {icon}
                                 {text}
-                            </Link>
+                            </button>
                         </li>
                     );
                 })}
