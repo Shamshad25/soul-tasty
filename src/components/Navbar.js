@@ -33,7 +33,7 @@ export default function Navbar() {
                 <div className='links-container' ref={linksContainerRef}>
                     <ul className="nav-links" ref={linksRef}>
                         <li>
-                            <NavLink style={(navData) => navData.isActive ? activeStyle : {}} to='/'>home</NavLink>
+                            <NavLink style={(navData) => navData.isActive ? activeStyle : {}}  to='/'>home</NavLink>
                         </li>
                         <li>
                             <NavLink style={(navData) => navData.isActive ? activeStyle : {}} to='/menu'>menu</NavLink>
@@ -50,6 +50,6 @@ export default function Navbar() {
                     </button>
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 };
