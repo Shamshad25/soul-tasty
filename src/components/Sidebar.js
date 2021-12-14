@@ -25,14 +25,13 @@ const Sidebar = () => {
                     const { id, url, text, icon } = link;
                     return (
                         <li key={id}>
-                            <button
+                            <button className='side-btn'
                                 //  to={url}
 
                                 onClick={() => onLinkClick(url)}
                             >
 
-                                {icon}
-                                {text}
+                                {icon}&ensp;{text}
                             </button>
                         </li>
                     );
