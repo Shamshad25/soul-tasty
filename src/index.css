@@ -287,6 +287,7 @@ Navbar
   box-shadow: darkgray;
   transition: all 0.3s linear;
   transform: translate(100%);
+  z-index: 10;
 }
 .show-sidebar {
   transform: translate(0);
@@ -294,12 +295,13 @@ Navbar
 @media screen and (min-width: 676px) {
   .sidebar {
     width: 400px;
+    z-index: 10;
   }
 }
 @media screen and (min-width: 676px) {
   .sidebar {
     width: 400px;
-    z-index: 1;
+    z-index: 10;
   }
 }
 
