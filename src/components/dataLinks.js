@@ -9,25 +9,25 @@ import {
 export const links = [
     {
         id: 1,
-        url: '/',
+        url: 'https://soultasty.netlify.app/',
         text: 'home',
         icon: <FaHome />,
     },
     {
         id: 2,
-        url: '/menu',
+        url: 'https://soultasty.netlify.app/menu',
         text: 'Menu',
         icon: <FaFolderOpen />,
     },
     {
         id: 3,
-        url: '/about',
+        url: 'https://soultasty.netlify.app/about',
         text: 'About Us',
         icon: <FaCalendarAlt />,
     },
     {
         id: 4,
-        url: '/contact',
+        url: 'https://soultasty.netlify.app/contact',
         text: 'Contact Us',
         icon: <FaUserFriends />,
     },
