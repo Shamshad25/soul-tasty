@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useGlobalContext } from '../context';
 import { FaTimes } from 'react-icons/fa';
 import { links } from './dataLinks';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = () => {
     const { isSidebarOpen, closeSidebar } = useGlobalContext();
+
+    const location = useLocation();
+    useEffect(() => {
+
+        closeSidebar();
+    }, [location])
 
     return (
         <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
