@@ -7,11 +7,13 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 // import components
 import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <Sidebar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/menu' element={<Menu />} />
@@ -20,6 +22,6 @@ function App() {
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
