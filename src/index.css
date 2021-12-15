@@ -450,7 +450,7 @@ h2{
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
     max-width: 40rem;
-  }
+    }
   .photo {
     height: 175px;
   }
@@ -462,6 +462,11 @@ h2{
   }
   .photo {
     height: 150px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .story p{
+    font-size: medium;
   }
 }
 /* Home */
